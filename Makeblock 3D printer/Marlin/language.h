@@ -31,7 +31,7 @@
 	#define FIRMWARE_URL "https://github.com/ErikZalm/Marlin/"
 #else
 	#define MACHINE_NAME "Makeblock"
-	#define FIRMWARE_URL "http://www.mendel-parts.com"
+	#define FIRMWARE_URL "http://www.makeblock.com"
 #endif
 
 #define STRINGIFY_(n) #n
