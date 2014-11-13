@@ -89,7 +89,7 @@
 // 52 is 200k thermistor - ATC Semitec 204GT-2 (1k pullup)
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan) (1k pullup)
 
-#define TEMP_SENSOR_0 57
+#define TEMP_SENSOR_0 1
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_BED 0
@@ -122,7 +122,7 @@
 
 // PID settings:
 // Comment the following line to disable PID and enable bang-bang.
-//#define PIDTEMP
+#define PIDTEMP
 #define BANG_MAX 256 // limits current to nozzle while in bang-bang mode; 256=full current
 #define PID_MAX 256 // limits current to nozzle while PID is active (see PID_FUNCTIONAL_RANGE below); 256=full current
 #ifdef PIDTEMP
@@ -264,7 +264,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define X_MIN_POS 0
 #define Y_MAX_POS 165
 #define Y_MIN_POS 0
-#define Z_MAX_POS 120
+#define Z_MAX_POS 140
 #define Z_MIN_POS 0
 
 #define X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
@@ -290,7 +290,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 2, 45}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {9000,9000,100,300}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
-#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
+#define DEFAULT_ACCELERATION          2000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  300   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
 
 // Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).
@@ -320,11 +320,11 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 //#define EEPROM_CHITCHAT
 
 // Preheat Constants
-#define PLA_PREHEAT_HOTEND_TEMP 180 
+#define PLA_PREHEAT_HOTEND_TEMP 205 
 #define PLA_PREHEAT_HPB_TEMP 70
 #define PLA_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
-#define ABS_PREHEAT_HOTEND_TEMP 240
+#define ABS_PREHEAT_HOTEND_TEMP 230
 #define ABS_PREHEAT_HPB_TEMP 100
 #define ABS_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
